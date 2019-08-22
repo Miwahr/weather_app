@@ -1,18 +1,20 @@
+<div class="container text-center">
+    <h1 class="display-1">{{$weather['city']}}</h1>
+    <img alt="{{$weather['clouds']}}" src="http://openweathermap.org/img/wn/{{$weather['weather_icon']}}@2x.png">
+    {{$weather['temp']}}&#176
 
-<h1>{{$weather['city']}}</h1>
+    <div class="row">
+        <div class="col">{{$weather['clouds']}}</div>
 
-<div class="container">
-<img alt="{{$weather['clouds']}}" src="http://openweathermap.org/img/wn/{{$weather['wether_icon']}}@2x.png">
-{{$weather['temp']}}&#176</div>
+        <div class="col">Ветер<br>
+            {{$weather['wind_speed']}} м/с, {{$weather['wind_direction']}}</div>
 
-<div class="container">{{$weather['clouds']}}</div>
+        <div class="col">давление<br>
+            {{$weather['pressure']}} мм. рт. ст.
+        </div>
 
-<div class="container">wind<br>
-{{$weather['wind_speed']}} m/s, {{$weather['wind_direction']}}</div>
-
-<div class="container">pressure<br>
-{{$weather['pressure']}} mm Hg</div>
-
-<div class="container">humidity<br>
-{{$weather['humidity']}} %</div>
-
+        <div class="col">влажность<br>
+            {{$weather['humidity']}} %
+        </div>
+    </div>
+</div>
