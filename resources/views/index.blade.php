@@ -8,7 +8,9 @@
     <script type="text/javascript" src="/js/jquery-3.3.1.min.js"></script>
 </head>
 <body>
+
 <div class="jumbotron">
+    <p>v1.1</p>
     <form class="form-inline" id="city" method="GET" action="{{route('show')}}">
         <label class="sr-only" for="inlineFormInputName2">Enter city</label>
         <input class="form-control mb-2 mr-sm-2" type="text" placeholder="city" name="city">
